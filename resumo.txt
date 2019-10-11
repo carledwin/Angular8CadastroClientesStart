@@ -1,0 +1,17 @@
+instalar 
+npm install -g @angular/cli@latest
+
+verificar a versão instalada do angular
+ng --version
+
+criando um novo projeto
+ng new new-project
+
+para abrir o visualcode 
+code .
+
+para iniciar o servidor da aplicação angular
+ng serve
+
+criando um component 
+ng g component clientes
