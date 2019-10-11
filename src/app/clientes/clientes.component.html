@@ -1,0 +1,18 @@
+
+<div class="div-clientes">
+
+    <h5>Cadastro de clientes</h5>
+
+    <input type="text" [(ngModel)]="cliente">
+    <button type="button" (click)="add()" class="button-clientes">Add</button>
+    
+    <br>
+    {{cliente}}
+    
+    <br>
+    
+    <ul *ngFor="let item of clientes" class="lista-clientes">
+        
+        <li>{{item}}</li>
+    </ul>
+</div>
