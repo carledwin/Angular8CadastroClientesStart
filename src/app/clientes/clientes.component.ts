@@ -9,7 +9,7 @@ import { Cliente } from '../model/cliente';
 export class ClientesComponent implements OnInit {
   
     clientes = [];
-    cliente: Cliente = {name: '', age: 0};
+    cliente: Cliente = {nome: '', idade: 0};
 
   constructor() { }
 
@@ -18,6 +18,6 @@ export class ClientesComponent implements OnInit {
 
   add(){
     this.clientes.push(this.cliente);
-    this.cliente = {name: '', age: 0};
+    this.cliente = {nome: '', idade: 0};
   }
 }

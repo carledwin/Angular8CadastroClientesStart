@@ -3,16 +3,23 @@
 
     <h5>Cadastro de clientes</h5>
 
-    <input type="text" [(ngModel)]="cliente">
+    <label for="nome">Nome: </label>
+    <input id="nome" type="text" [(ngModel)]="cliente.nome">
+    
+    <br>
+    <label for="idade">Idade: </label>
+    <input id="idade" type="number" [(ngModel)]="cliente.idade">
+    
+    <br>
     <button type="button" (click)="add()" class="button-clientes">Add</button>
     
     <br>
-    {{cliente}}
+    {{cliente.nome}} 
     
     <br>
     
     <ul *ngFor="let item of clientes" class="lista-clientes">
         
-        <li>{{item}}</li>
+        <li>{{item.nome}} / {{item.idade}}</li>
     </ul>
 </div>

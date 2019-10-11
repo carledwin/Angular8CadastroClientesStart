@@ -1,5 +1,5 @@
 export class Cliente{
 
-    name: string;
-    age: number;
+    nome: string;
+    idade: number;
 }
